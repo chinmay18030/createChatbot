@@ -62,7 +62,7 @@ def data_processing(data,questionKey,tagKey):
     return np.array(train_x), np.array(train_y), words, document, classes
 
 
-def train_model(hidden_layers: [[128, "relu"], [234, "relu"]],trainX,trainY):
+def train_model(hidden_layers: [[128, "relu"], [234, "relu"]],trainX,trainY,optimizer="adam",loss="categorical_crossentropy",metrics=["accuracy]):
     model = Sequential()
     model.add(Flatten())
     model.add(
@@ -76,7 +76,7 @@ def train_model(hidden_layers: [[128, "relu"], [234, "relu"]],trainX,trainY):
         model.add(Dense(i[0],i[1]))
 
     model.add(Dense(len(trainY[0]), activation="softmax"))
-    model.compile(optimizer="adam",loss="categorical_crossentropy",metrics=["accuracy"])
+    model.compile(optimizer=optimmizer,loss=loss,metrics=metrics)
     return model
 
 
