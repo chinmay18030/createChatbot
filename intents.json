@@ -19,7 +19,7 @@
          "responses": ["You can call me .", "I am the amazing ", "I'm ."],
          "context_set": ""
         },
-        {"tag": "shop",
+        {"tag": "eat",
          "patterns": ["Id like to eat something", "whats on the menu", "what do you reccommend?", "could i get something to eat"],
          "responses": ["Make your way to kitchen, and open the drawer, there are some tasty cookies in there ", "Sorry you did not program me how to cook"],
          "context_set": ""
