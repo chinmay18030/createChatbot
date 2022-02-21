@@ -1,3 +1,4 @@
+# Thi spackage has some bugs right now, corrections will be done in a few days. Thank you
 # createChatbot
 Making a chatbot is very difficult stuff. Processing data and training the model. 
 This module will help you to make a python module very easily. 
@@ -59,3 +60,5 @@ Now as you have got the predicted class, you can find the dictionary which has t
 ```bash
 https://github.com/chinmay18030/createChatbot
 ```
+
+
